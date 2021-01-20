@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    color: black;
+}
+
+.image1,
+.image2,
+.image3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.image1 {
+    background-image: url("image/city.jpg");
+    min-height: 100rem;
+}
+
+.image2 {
+    background-image: url("image/city2.jpg");
+    min-height: 100%;
+}
+
+.image3 {
+    background-image: url("image/city3.jpg");
+    min-height: 100%;
+}
+
+.col-8 {
+    height: 15rem;
+    margin: 15rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.col-12 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40rem;
+}
+
+.heading {
+    text-align: center;
+    opacity: 0.8;
+    padding: 2rem 0;
+}
+
+.first-text,
+.second-text,
+.third-text {
+    opacity: 0.8;
+}
+
+.display-4 {
+    margin: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    color: black;
+    margin: 3rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    .image1 {
+        min-height: 120rem;
+    }
+    .col-8 {
+        height: 13rem;
+        margin: 10rem 0;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .dipslay4,
+    p {
+        margin: 0 4rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    .dipslay4,
+    p {
+        margin: 0 6rem;
+    }
+    .image1 {
+        min-height: 120rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .dipslay4,
+    p {
+        margin: 0 10rem;
+    }
+}
